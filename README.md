@@ -1,42 +1,56 @@
-# fitness routine builder
+# Fitness Routine Builder
 
-an API for our new fitness empire, FitnessTrac.kr, using node, express, and postgresql
+The Fitness Routine Builder is a web application that allows users to create personalized fitness routines tailored to their goals and preferences. Built using a modern tech stack, including React.js, Express.js, Node.js, PostgreSQL, Webpack, Axios, and JSON Web Token, this application offers a seamless user experience and robust functionality.
 
-## Getting Started
+## Key Features
 
-Install Packages
+- **User Registration and Authentication:** Users can create an account, securely register, and log in using JSON Web Token authentication. This ensures that their routines and personal information are protected.
 
-    npm i
+- **Customizable Fitness Routines:** Users have the flexibility to create and customize their fitness routines by selecting activities from a comprehensive list. They can choose from a wide range of exercises, cardio activities, and other fitness modalities.
 
-Initialize Database
+- **Public/Private Routines:** Users can control the visibility of their fitness routines. They have the option to keep their routines private or make them public, allowing other users to view and access their workout plans.
 
-    createdb fitness-dev
+- **Activity Search and Exploration:** The application provides a search functionality that allows users to find specific activities or explore different routines created by other users. This promotes community engagement and enables users to discover new exercises and training approaches.
 
-Run Seed Script
+- **Responsive and Intuitive User Interface:** The Fitness Routine Builder offers a user-friendly interface built with React.js, ensuring a smooth and responsive user experience across various devices and screen sizes.
 
-    npm run seed:dev
+- **Backend API and Database Integration:** The Express.js and Node.js backend provides a robust API for handling user requests, managing routines, and storing data in a PostgreSQL database. Axios is utilized for making asynchronous HTTP requests, ensuring efficient data exchange between the client and server.
 
-## Automated Tests
+- **Build and Deployment:** The application is bundled using Webpack, optimizing performance and enabling seamless deployment to a hosting platform.
 
-**NOTE:** At first, there will be too many errors for the tests to even run. Start by running the seed:dev script above, until it is working.
+## Tech Stack
 
-Once you've resolved all errors in your console, we recommend running the DB tests first, and move to API next. When you open the test files, you'll notice that the `it()` blocks defining tests are all prefaced with an `x`. Adding and removing the `x` lets you decide to set some tests as _skipped_, meaning they won't run. To get the tests to run remove the `x`.
+- React.js
+- Express.js
+- Node.js
+- PostgreSQL
+- Webpack
+- Axios
+- JSON Web Token
 
-If you'd like to remove all of them in a file at once you can use the `CMD + f` on Mac or `CTRL + f` on Windows to begin a search. In the search bar type `xit` and select the drop down arrow at the left of the search bar. You'll see a placeholder in another bar that says replace. In this bar type `it`. Lastly, look to the right hand side and hover your cursor over the icons to find the one that will replace all. Typically this is the last one on the right. Then save the file. If you have run the test script below, you should see the tests begin running in the terminal.
+## Installation
 
-If you only want to run one or two tests, you can add `.only` after `it` and `describe` to isolate that particular test. That is, to run only the tests in a particular `describe` block, use: the syntax `describe.only()`. To isolate one or more `it` blocks, use `it.only()`.
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Run `npm install` to install the dependencies.
+4. Configure the backend API by providing the necessary environment variables.
+5. Run `npm start` to start the development server.
+6. Access the application at `http://localhost:3000`.
 
-Make sure to read the tests and comments in this repo carefully, they offer some hints every now and again that could save you hours!
+## Contribution
 
-To run all the tests in watch mode (re-runs on code update), run
+Contributions are welcome! If you have any ideas, improvements, or bug fixes, please submit a pull request. Make sure to follow the project's code style and guidelines.
 
-    npm run test:watch
+## License
 
-### DB Methods
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as per the terms of the license.
 
-    npm run test:watch db
+## Acknowledgements
 
-### API Routes (server must be running for these to pass)
+We would like to express our gratitude to the open-source community for their valuable contributions and the developers of the libraries and tools used in this project.
 
-    npm run test:watch api
+## Contact
+
+For any inquiries or feedback, please contact us at [lwilliams.coding@gmail.com]
+
 
